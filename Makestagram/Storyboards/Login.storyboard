@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="99Z-R2-Joi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="OIy-Eq-5xz">
+            <objects>
+                <viewController id="99Z-R2-Joi" customClass="LoginViewController" customModule="Makestagram" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pr8-BV-Q95">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQG-5L-DKF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="5os-ws-8Fq">
+                                        <rect key="frame" x="67" y="80.5" width="240" height="104.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makestagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gx9-Rr-bfT">
+                                                <rect key="frame" x="12" y="0.0" width="216" height="43.5"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to see photos and videos from your friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHX-a4-t8I">
+                                                <rect key="frame" x="0.0" y="68.5" width="240" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="cfs-sb-NHJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.41587999131944442" blue="0.58447265625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5os-ws-8Fq" firstAttribute="centerX" secondItem="rQG-5L-DKF" secondAttribute="centerX" id="cfX-0Z-YKm"/>
+                                    <constraint firstItem="5os-ws-8Fq" firstAttribute="centerY" secondItem="rQG-5L-DKF" secondAttribute="centerY" id="dYg-Qq-IOE"/>
+                                    <constraint firstAttribute="height" constant="265" id="zrx-9h-fql"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beU-fR-l2w">
+                                <rect key="frame" x="35" y="290" width="305" height="44"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.59215686274509804" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vdS-cF-4re"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Register or Log In"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="99Z-R2-Joi" eventType="touchUpInside" id="UXw-HE-Yzw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="beU-fR-l2w" firstAttribute="leading" secondItem="qxK-e2-dwe" secondAttribute="leading" constant="35" id="BXc-7c-Ac3"/>
+                            <constraint firstItem="qxK-e2-dwe" firstAttribute="trailing" secondItem="beU-fR-l2w" secondAttribute="trailing" constant="35" id="C6E-9N-x9p"/>
+                            <constraint firstItem="rQG-5L-DKF" firstAttribute="top" secondItem="pr8-BV-Q95" secondAttribute="top" id="QFm-3e-Hxp"/>
+                            <constraint firstItem="qxK-e2-dwe" firstAttribute="trailing" secondItem="rQG-5L-DKF" secondAttribute="trailing" id="Vdc-2g-HuD"/>
+                            <constraint firstItem="beU-fR-l2w" firstAttribute="top" secondItem="rQG-5L-DKF" secondAttribute="bottom" constant="25" id="ecj-5R-6bu"/>
+                            <constraint firstItem="rQG-5L-DKF" firstAttribute="leading" secondItem="qxK-e2-dwe" secondAttribute="leading" id="nVY-wx-0W7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qxK-e2-dwe"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="beU-fR-l2w" id="epV-1E-zan"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQc-MM-jcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229.59999999999999" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>
